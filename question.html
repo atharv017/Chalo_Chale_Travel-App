@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(prompt("Enter number:"));
+        
+        let t1 =0;
+        let t2 = 1;
+        console.log("Febonachi Series For : " + num);
+        console.log(t1);
+        console.log(t2);
+        for(let i = 2 ; i<=num ; i++){
+            let fNum = t1+t2;
+            console.log(fNum);
+            t1=t2;
+            t2=fNum;
+        }
+        
+        
+        
+        // count number in input number
+        
+        var n = parseInt(prompt("Enter number:"));
+        var count=0;
+        while(n>0){
+            n = n/10;
+            count=count+1;
+        }
+        console.log("Count is : " + count);
+        
+    </script>
+</body>
+</html>
